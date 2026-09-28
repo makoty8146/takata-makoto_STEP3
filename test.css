@@ -60,8 +60,8 @@ body{
     img{
         max-width: 100%;
         height: auto;
-        padding-top: 20px;
-
+        border-radius: 8px;
+        margin-top: 20px;
     }
     
     .menu-list{
@@ -75,17 +75,26 @@ body{
         border: 1px solid #ddd;
         border-radius: 8px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     .menu-item img{
         width: 100%;
-        height:150px;
+        height: 150px;
         object-fit: cover;
-        padding-top: 10px;
+        border-radius: 8px;
     }
     .menu-item p{
         margin: 10px 0 0 ;
         font-size: 13px;
         padding: 20px;
+        border-radius: 8px;
+
+    }
+    .menu-item:hover{
+    font-weight: bold;
+    background-color: #ccc;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
     }
 
     form{
